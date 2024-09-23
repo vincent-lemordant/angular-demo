@@ -1,28 +1,6 @@
-<div>
-  <h1>Angular App</h1>
+<div class="m-1">
+  <h1>{{ title }}</h1>
 
-
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col" sortable="id" (sort)="onSort($event)">Id</th>
-        <th scope="col" sortable="name" (sort)="onSort($event)">Name</th>
-        <th scope="col" sortable="email" (sort)="onSort($event)">Email</th>
-        <th scope="col" sortable="gender" (sort)="onSort($event)">Genre</th>
-        <th scope="col" sortable="status" (sort)="onSort($event)">Statut</th>
-      </tr>
-    </thead>
-    <tbody>
-
-      <tr *ngFor="let song of songs; index as i">
-        <td>{{ i + 1 }}</td>
-        <td>{{ song.id | number }}</td>
-        <td>{{ song.name }}</td>
-        <td>{{ song.email }}</td>
-        <td><i class="bi" class="{{song.gender === 'male' ? 'bi-gender-male' : 'bi-gender-female'}}"></i></td>
-        <td><i class="bi" class="{{song.status === 'active' ? 'bi-toggle-on' : 'bi-toggle-off'}}"></i></td>
-      </tr>
-    </tbody>
-  </table>
+  <router-outlet>
+  </router-outlet>
 </div>

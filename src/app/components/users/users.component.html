@@ -1,0 +1,26 @@
+<div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col" sortable="id" (sort)="onSort($event)">Id</th>
+        <th scope="col" sortable="name" (sort)="onSort($event)">Name</th>
+        <th scope="col" sortable="email" (sort)="onSort($event)">Email</th>
+        <th scope="col" sortable="gender" (sort)="onSort($event)">Genre</th>
+        <th scope="col" sortable="status" (sort)="onSort($event)">Statut</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let user of users; index as i">
+        <td>{{ i + 1 }}</td>
+        <td>{{ user.id | number }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td><i class="bi" class="{{user.gender === 'male' ? 'bi-gender-male' : 'bi-gender-female'}}"></i></td>
+        <td><i class="bi" class="{{user.status === 'active' ? 'bi-toggle-on' : 'bi-toggle-off'}}"></i></td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-primary" routerLink="/">Go Home</button>
+</div>

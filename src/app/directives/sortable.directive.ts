@@ -1,13 +1,16 @@
 import { Directive, EventEmitter, Input, Output } from '@angular/core';
-import { Song } from '../models/Song';
+import { User } from '../models/user';
 
-export type SortColumn = keyof Song | '';
+// Header sorting inspired by : https://ng-bootstrap.github.io/releases/14.x/#/components/table/examples#sortable
+export type SortColumn = keyof User | '';
 export type SortDirection = 'asc' | 'desc' | '';
+
 const rotate: { [key: string]: SortDirection } = {
   asc: 'desc',
   desc: '',
   '': 'asc',
 };
+
 export interface SortEvent {
   column: SortColumn;
   direction: SortDirection;

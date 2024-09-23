@@ -1,4 +1,4 @@
-export type Song = {
+export type User = {
   id?: number;
   name?: string | null;
   email?: string;
