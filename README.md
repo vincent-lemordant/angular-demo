@@ -1,27 +1,52 @@
-# Demo
+# Test Analyste-Programmeur (Angular)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
+Application listant les usagers obtenus d'un appel API à travers un tableau trié dans le browser (chrome).
+L'application est réalisée dans le cadre d'un test technique ([voir les consignes](CONSIGNES.md)).
+
+## Requirements
+
+For building and running the application you need:
+
+- [Angular 15](https://v15.angular.io/docs)
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Project Setup
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```sh
+npm install
+```
 
-## Build
+### Compile and Hot-Reload for Development
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```sh
+npm run start
+```
 
-## Running unit tests
+### Type-Check, Compile and Minify for Production
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+npm run build
+```
 
-## Running end-to-end tests
+### Test with [Karma](https://angular.dev/guide/testing) for unit & component testing
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```sh
+npm run test
+```
 
-## Further help
+### Test with [Cypress](https://www.cypress.io/) for e2e testing
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+**(Server must be running)**
+
+```sh
+npm run test:e2e
+```
+
+Test e2e with cypress opened :
+
+```sh
+npx cypress open
+```

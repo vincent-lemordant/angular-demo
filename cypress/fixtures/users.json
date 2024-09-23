@@ -1,0 +1,72 @@
+[
+  {
+    "id": 7416843,
+    "name": "Suryakantam Asani",
+    "email": "suryakantam_asan@swift.example",
+    "gender": "male",
+    "status": "inactive"
+  },
+  {
+    "id": 7416842,
+    "name": "Hiranya Trivedi I",
+    "email": "trivedi_hiranya_i@botsford-renner.test",
+    "gender": "male",
+    "status": "inactive"
+  },
+  {
+    "id": 7416841,
+    "name": "Aslesha Arora",
+    "email": "aslesha_arora@lowe.example",
+    "gender": "male",
+    "status": "active"
+  },
+  {
+    "id": 7416840,
+    "name": "Ashlesh Gupta",
+    "email": "ashlesh_gupta@boyle.test",
+    "gender": "female",
+    "status": "inactive"
+  },
+  {
+    "id": 7416839,
+    "name": "Keerti Somayaji IV",
+    "email": "iv_somayaji_keerti@gleason-stokes.example",
+    "gender": "male",
+    "status": "inactive"
+  },
+  {
+    "id": 7416838,
+    "name": "Prayag Varma",
+    "email": "prayag_varma@keeling.test",
+    "gender": "female",
+    "status": "inactive"
+  },
+  {
+    "id": 7416837,
+    "name": "Amb. Giri Asan",
+    "email": "asan_amb_giri@rowe.example",
+    "gender": "female",
+    "status": "inactive"
+  },
+  {
+    "id": 7416836,
+    "name": "Dhyaneshwar Guneta JD",
+    "email": "jd_guneta_dhyaneshwar@bogan-kilback.test",
+    "gender": "male",
+    "status": "active"
+  },
+  {
+    "id": 7416835,
+    "name": "Bankimchandra Mishra IV",
+    "email": "bankimchandra_mishra_iv@west.test",
+    "gender": "female",
+    "status": "inactive"
+  },
+  {
+    "id": 7416834,
+    "name": "Mangala Kaul",
+    "email": "kaul_mangala@reilly.example",
+    "gender": "female",
+    "status": "active"
+  }
+]

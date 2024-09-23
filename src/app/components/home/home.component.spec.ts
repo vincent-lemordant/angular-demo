@@ -15,7 +15,7 @@ describe('HomeComponent', () => {
     const fixture = TestBed.createComponent(HomeComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h2')?.textContent).toContain(
+    expect(compiled.querySelector('h2')?.textContent).toEqual(
       'Vincent Lemordant'
     );
   });

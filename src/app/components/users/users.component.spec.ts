@@ -4,7 +4,7 @@ import { UsersComponent } from './users.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { By } from '@angular/platform-browser';
 import { Router } from '@angular/router';
-import { Location } from '@angular/common';
+import { Location, CommonModule } from '@angular/common';
 
 describe('UsersComponent', () => {
   beforeEach(async () => {

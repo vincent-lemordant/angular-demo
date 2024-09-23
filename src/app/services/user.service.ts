@@ -13,11 +13,13 @@ export class UserService {
 
   constructor(public readonly httpClient: HttpClient) {}
 
+  // Perform HTTP call to retrieve users.
   public fetchUsersFromApi(): Observable<User[]> {
     this.data$ = this.httpClient.get<User[]>(this.API_URL).pipe(shareReplay(1));
     return this.data$;
   }
 
+  // Return previously fetched users.
   public getUsers(): Observable<User[]> {
     return this.data$;
   }
